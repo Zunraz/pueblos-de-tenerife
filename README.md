@@ -2,7 +2,7 @@
 
 Un proyecto de automatización y extracción de datos centrado en la isla de Tenerife. Este proyecto surge de la necesidad de disponer de una lista estructurada y limpia de los municipios y entidades de la isla, información que a menudo se encuentra dispersa o en formatos no procesables (tablas web, PDFs, etc.).
 
-🚀 **[DESCARGAR DATASET (CSV)]([TU_LINK_AL_ARCHIVO_CSV_AQUÍ](https://github.com/Zunraz/pueblos-de-tenerife/blob/main/pueblos_tenerife.csv))**
+🚀 **[DESCARGAR DATASET (CSV)](https://github.com/Zunraz/pueblos-de-tenerife/blob/main/pueblos_tenerife.csv)**
 
 ## 📊 El Dataset
 El resultado principal es un archivo `pueblos_tenerife.csv` que contiene la información recolectada de forma sistemática. Este formato permite su importación directa en herramientas de análisis como Excel, Google Sheets, Power BI o librerías de programación como Pandas.
