@@ -2,7 +2,7 @@
 
 Un proyecto de automatización y extracción de datos enfocado en la isla de Tenerife. Este script permite transformar información no estructurada de la web en una base de datos limpia y lista para usar en aplicaciones web, análisis estadísticos o visualización de datos geográficos.
 
-🚀 **[VER DATASET (JSON)]([ENLACE_A_TU_ARCHIVO_JSON](https://github.com/Zunraz/pueblos-de-tenerife/blob/main/pueblos_tenerife.csv))**
+🚀 **[VER DATASET (JSON)](https://github.com/Zunraz/pueblos-de-tenerife/blob/main/pueblos_tenerife.csv)**
 
 ## 📊 El Proyecto
 El objetivo principal fue recopilar información detallada de los municipios y pueblos de Tenerife, incluyendo datos que no están disponibles de forma consolidada en una API pública.
