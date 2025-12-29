@@ -10,7 +10,6 @@ El resultado principal es un archivo `pueblos_tenerife.csv` que contiene la info
 ### Datos incluidos en el CSV:
 - **Nombre del Municipio:** Nombre oficial procesado.
 - **Población:** Datos demográficos obtenidos durante el scraping.
-- **[Añade aquí otras columnas que tenga tu CSV, ej. Superficie, Altitud, etc.]**
 
 ## 🛠️ Proceso de Extracción (Web Scraping)
 Para este proyecto se desarrolló un script que automatiza la navegación y extracción de datos:
