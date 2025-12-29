@@ -1,39 +1,39 @@
-# 🕵️ Impostor P2P - Real-Time Multiplayer Game
+# 🏝️ Tenerife Data Scraper & Dataset
 
-¡Bienvenido a **Impostor P2P**! Un juego de mesa social de deducción y mentiras, inspirado en clásicos como "The Spyfall", pero diseñado para funcionar completamente en el navegador sin necesidad de un servidor centralizado, utilizando tecnología Peer-to-Peer.
+Un proyecto de automatización y extracción de datos enfocado en la isla de Tenerife. Este script permite transformar información no estructurada de la web en una base de datos limpia y lista para usar en aplicaciones web, análisis estadísticos o visualización de datos geográficos.
 
-🚀 **[VER DEMO EN VIVO](TU_LINK_DE_GITHUB_PAGES_AQUI)**
+🚀 **[VER DATASET (JSON)](ENLACE_A_TU_ARCHIVO_JSON)**
 
-## 🌟 Características principales
-- **Conectividad Global:** Gracias a la integración de servidores STUN, jugadores de cualquier parte del mundo pueden unirse a la misma sala a través de Internet.
-- **Arquitectura P2P:** El juego corre directamente entre los navegadores de los usuarios mediante la librería **PeerJS (WebRTC)**, eliminando la necesidad de un backend costoso.
-- **Base de Datos Masiva:** Incluye miles de palabras distribuidas en categorías (Comida, Animales, Países, Objetos) cargadas dinámicamente desde un archivo JSON.
-- **Sincronización Robusta:** Sistema de cronómetro basado en tiempo real (`Date.now()`) para evitar desincronizaciones si un dispositivo móvil entra en modo reposo.
-- **Experiencia de Usuario (UX):** Interfaz moderna y responsive con efectos visuales como confeti (canvas-confetti) y bloqueador de apagado de pantalla (Wake Lock API).
+## 📊 El Proyecto
+El objetivo principal fue recopilar información detallada de los municipios y pueblos de Tenerife, incluyendo datos que no están disponibles de forma consolidada en una API pública.
 
-## 🛠️ Tecnologías utilizadas
-- **JavaScript (ES6+):** Lógica del juego, manejo de estados y comunicación asíncrona.
-- **PeerJS / WebRTC:** Protocolo para la comunicación directa entre jugadores.
-- **HTML5 & CSS3:** Estructura y diseño moderno con CSS Grid y Flexbox.
-- **Canvas-confetti:** Para feedback visual en las victorias.
+### Datos extraídos:
+- Nombre del municipio/pueblo.
+- Población (datos actualizados).
+- Superficie geográfica.
+- Enlaces a fuentes oficiales.
+- [Añade aquí cualquier otro dato que hayas extraído].
 
-## 🕹️ Cómo jugar
-1. **Host:** Escribe tu nombre, elige un ID único para tu sala y dale a "Crear Sala".
-2. **Invitados:** Escriben su nombre y el ID de la sala del Host en el campo "Unirse".
-3. **Configuración:** El Host elige las categorías y el tiempo de discusión.
-4. **Roles:** El sistema reparte los roles automáticamente. ¡Todos verán la palabra menos el Impostor!
-5. **Deducción:** Al terminar el tiempo, todos votan por quién creen que es el impostor.
+## 🛠️ Stack Tecnológico
+- **Python / JavaScript:** (Elige el lenguaje que usaste) para la lógica de extracción.
+- **BeautifulSoup / Puppeteer:** (Elige la librería usada) para el parseo del DOM.
+- **JSON/CSV:** Formatos de salida para la persistencia de datos.
 
-## 🧠 Desafíos Técnicos Superados
-- **NAT Traversal:** Implementación de servidores ICE (STUN) para permitir conexiones a través de firewalls y diferentes redes domésticas.
-- **Mobile Sleep Fix:** Solución al problema de congelamiento de JavaScript en móviles mediante cálculos de delta de tiempo real, asegurando que todos los jugadores terminen la ronda al mismo segundo exacto.
-- **State Management:** Sincronización de votos y resultados entre múltiples nodos P2P garantizando la integridad de la partida.
+## 🧠 Desafíos de Extracción
+- **Navegación por el DOM:** Identificación de patrones en tablas HTML complejas y selectores CSS variables.
+- **Limpieza de Datos (Data Cleaning):** Procesamiento de strings para eliminar caracteres especiales, espacios innecesarios y normalizar los formatos numéricos.
+- **Eficiencia:** Implementación de tiempos de espera para respetar el `robots.txt` del sitio fuente y evitar sobrecargas.
 
-## 📂 Estructura del Proyecto
-- `index.html`: Estructura principal y contenedores dinámicos.
-- `style.css`: Estilo visual, animaciones y diseño responsive.
-- `script.js`: El cerebro del juego (Lógica P2P y flujo de partida).
-- `palabras.json`: Diccionario extendido de términos.
+## 📁 Estructura de Archivos
+- `scraper/`: Código fuente del script de extracción.
+- `data/`: Contiene el dataset final en formato `.json` y `.csv`.
+- `examples/`: Pequeños snippets de cómo importar estos datos en un proyecto JS/Python.
+
+## 📈 Casos de Uso
+Este dataset puede ser utilizado para:
+1. Crear mapas interactivos de la isla con **Leaflet** o **Google Maps API**.
+2. Desarrollar aplicaciones de turismo o buscadores de servicios locales.
+3. Análisis demográficos de la evolución de la población en las islas.
 
 ---
-Desarrollado con ❤️ por [Tu Nombre/Usuario de GitHub]
+**Nota Legal:** Este proyecto se ha realizado con fines puramente educativos y de investigación, cumpliendo con las buenas prácticas de web scraping.
